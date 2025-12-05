@@ -53,7 +53,7 @@ export default function GoldMineLanding() {
       name: 'Monthly',
       price: '$9.9',
       period: '/month',
-      description: 'Perfect for testing the waters',
+      description: 'For validating new SaaS ideas',
       features: [
         '10 AI-curated opportunities/day',
         'Basic pain score analysis',
@@ -100,20 +100,20 @@ export default function GoldMineLanding() {
 
   const faqs = [
     {
-      q: '数据从哪里来？',
-      a: '我们的 AI 每天抓取 Reddit (200+ subreddits) 和 Twitter 上的公开讨论，使用 NLP 识别真实的用户痛点和未被满足的需求。'
+      q: 'What data sources does GoldMine AI support for market research?',
+      a: 'Our AI crawls public discussions on Reddit (200+ subreddits), Twitter, and Facebook daily, using NLP to identify genuine user pain points and unmet needs.'
     },
     {
-      q: '和手动刷 Reddit 有什么区别？',
-      a: '我们过滤掉 99% 的噪音（抱怨、spam、低质量内容），只显示"有人愿意付费解决"的真实商机。每个机会都配备痛点评分、竞品分析和市场潜力评估。'
+      q: 'Why is AI validation better than manual searching for SaaS ideas?',
+      a: 'We filter out 99% of the noise (complaints, spam, low-quality content), showing only real opportunities where "someone is willing to pay to solve." Each opportunity includes a pain score, competitor analysis, and market potential assessment.'
     },
     {
-      q: '可以退款吗？',
-      a: '支持 14 天无理由退款。如果你觉得没有发现任何有价值的商机，全额退款。'
+      q: 'How often is the opportunity data updated?',
+      a: 'The system runs 24/7 in real-time. Whenever a high-value "buy signal" appears on Reddit, Twitter, or Facebook, AI completes the analysis and adds it to the database within minutes.'
     },
     {
-      q: '适合非技术人员吗？',
-      a: '绝对适合！我们的报告用简单易懂的语言呈现，无需技术背景也能理解市场机会。'
+      q: 'Is it suitable for non-technical people?',
+      a: 'Absolutely! Our reports are presented in simple, easy-to-understand language. No technical background is needed to understand market opportunities.'
     }
   ]
 
@@ -148,7 +148,7 @@ export default function GoldMineLanding() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-amber-500/10 border border-amber-500/20 rounded-full">
               <Pickaxe className="w-4 h-4 text-amber-400" />
-              <span className="text-sm text-amber-300">AI-Powered Opportunity Mining</span>
+              <span className="text-sm text-amber-300">#1 AI Market Research Tool for SaaS Ideas</span>
             </div>
 
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-amber-200 via-yellow-300 to-amber-200 bg-clip-text text-transparent">
@@ -158,11 +158,11 @@ export default function GoldMineLanding() {
             </h1>
 
             <p className="text-xl md:text-2xl text-slate-300 mb-4 max-w-3xl mx-auto">
-              24/7 AI 监听 Reddit & Twitter，自动挖掘高付费意愿的 SaaS 商机
+              The Ultimate SaaS Idea Validator. 24/7 monitoring Reddit, Twitter, Facebook & more to automatically discover high-demand Niche Markets with paying intent.
             </p>
 
             <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto">
-              告别盲目开发。在写第一行代码前，用数据验证你的 Micro-SaaS 想法。
+              Stop building blindly. Validate your Micro-SaaS ideas with data before writing a single line of code.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -242,7 +242,7 @@ export default function GoldMineLanding() {
               Why Developers Love Us
             </h2>
             <p className="text-xl text-slate-400">
-              从噪音中提取黄金信号
+              Extract golden signals from the noise
             </p>
           </motion.div>
 
@@ -250,38 +250,38 @@ export default function GoldMineLanding() {
             {[
               {
                 icon: Radar,
-                title: 'AI Signal Filtering',
-                description: '告别无休止刷帖。AI 自动过滤 99% 无效吐槽，只呈现真实"求购"信号。',
+                title: 'AI Market Research & Filtering',
+                description: 'Say goodbye to manual research. AI automatically filters noise and precisely captures Micro-SaaS buying signals and business opportunities.',
                 gradient: 'from-amber-500 to-yellow-600'
               },
               {
                 icon: Target,
                 title: 'Pain Score Analysis',
-                description: '每个商机配备 1-10 分痛点强度评分，附带原始讨论链接和用户画像。',
+                description: 'Each opportunity comes with a 1-10 pain intensity score, complete with original discussion links and user personas.',
                 gradient: 'from-orange-500 to-amber-600'
               },
               {
                 icon: TrendingUp,
                 title: 'Real-time Heat Map',
-                description: '实时热度趋势图，看到商机从萌芽到爆发的完整曲线。',
+                description: 'Live trend charts showing the complete journey of opportunities from inception to explosion.',
                 gradient: 'from-yellow-500 to-amber-600'
               },
               {
                 icon: Shield,
-                title: 'Competitor透视',
-                description: '自动分析现有竞品的优缺点，找到差异化切入点。',
+                title: 'Competitor Insights',
+                description: 'Automatically analyze strengths and weaknesses of existing competitors to find differentiation angles.',
                 gradient: 'from-amber-600 to-orange-500'
               },
               {
                 icon: Zap,
                 title: 'First Mover Advantage',
-                description: '每日 Top 3 高潜商机邮件推送，快人一步发现下一个爆款。',
+                description: 'Daily Top 3 high-potential opportunities delivered via email. Stay ahead and discover the next big hit.',
                 gradient: 'from-yellow-600 to-amber-500'
               },
               {
                 icon: Pickaxe,
-                title: 'Data-Backed Validation',
-                description: '拒绝盲目开发。用数据驱动的市场洞察验证你的想法。',
+                title: 'Idea Validation & Insights',
+                description: 'Reject blind development. Validate your ideas with data-driven market insights.',
                 gradient: 'from-amber-500 to-yellow-500'
               }
             ].map((feature, index) => (
@@ -318,7 +318,7 @@ export default function GoldMineLanding() {
               Simple, Transparent Pricing
             </h2>
             <p className="text-xl text-slate-400">
-              选择最适合你的方案，随时可以升级
+              Choose the plan that fits you best, upgrade anytime
             </p>
           </motion.div>
 
@@ -447,12 +447,12 @@ export default function GoldMineLanding() {
             <span className="text-xl font-bold">GoldMine AI</span>
           </div>
           <p className="text-slate-500 mb-4">
-            AI-Powered Opportunity Mining for Indie Builders
+            The Best SaaS Idea Validation Platform for Indie Hackers & Solopreneurs.
           </p>
           <div className="flex justify-center gap-6 text-sm text-slate-600">
-            <a href="#" className="hover:text-amber-400 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-amber-400 transition-colors">Terms</a>
-            <a href="#" className="hover:text-amber-400 transition-colors">Contact</a>
+            <a href="/privacy" className="hover:text-amber-400 transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-amber-400 transition-colors">Terms of Service</a>
+            <a href="mailto:contact@digwordai.com" className="hover:text-amber-400 transition-colors">Contact Us</a>
           </div>
         </div>
       </footer>
@@ -523,7 +523,7 @@ export default function GoldMineLanding() {
                     </button>
 
                     <p className="text-xs text-slate-500 text-center">
-                      This is a demo. No real payment will be processed.
+                      
                     </p>
                   </div>
                 </>
