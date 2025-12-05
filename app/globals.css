@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply outline-none;
+  }
+  body {
+    @apply bg-slate-950 text-white;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom animations */
+@keyframes breathe {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+/* Gradient utilities */
+@layer utilities {
+  .text-amber-200 { color: #FDE68A; }
+  .text-amber-300 { color: #FCD34D; }
+  .text-amber-400 { color: #FBBF24; }
+  .text-amber-500 { color: #F59E0B; }
+  .text-yellow-300 { color: #FDE047; }
+  .text-yellow-600 { color: #CA8A04; }
+  
+  .bg-amber-500 { background-color: #F59E0B; }
+  .bg-amber-400 { background-color: #FBBF24; }
+  .bg-yellow-500 { background-color: #EAB308; }
+  .bg-yellow-600 { background-color: #CA8A04; }
+  
+  .from-amber-500 { --tw-gradient-from: #F59E0B; }
+  .from-amber-400 { --tw-gradient-from: #FBBF24; }
+  .from-amber-200 { --tw-gradient-from: #FDE68A; }
+  .from-yellow-500 { --tw-gradient-from: #EAB308; }
+  
+  .to-amber-600 { --tw-gradient-to: #D97706; }
+  .to-yellow-600 { --tw-gradient-to: #CA8A04; }
+  .to-yellow-500 { --tw-gradient-to: #EAB308; }
+  .to-amber-200 { --tw-gradient-to: #FDE68A; }
+  
+  .via-yellow-300 { --tw-gradient-stops: var(--tw-gradient-from), #FDE047, var(--tw-gradient-to, rgba(253, 224, 71, 0)); }
+  
+  .border-amber-500 { border-color: #F59E0B; }
+  .border-amber-500\/20 { border-color: rgba(245, 158, 11, 0.2); }
+  .border-amber-500\/50 { border-color: rgba(245, 158, 11, 0.5); }
+  
+  .shadow-amber-500\/50 { --tw-shadow-color: rgba(245, 158, 11, 0.5); }
+  .shadow-amber-500\/80 { --tw-shadow-color: rgba(245, 158, 11, 0.8); }
+}
+
