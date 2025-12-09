@@ -20,6 +20,7 @@ import GridBackground from '@/components/GridBackground'
 import GoldMineNavbar from '@/components/GoldMineNavbar'
 
 export default function GoldMineLanding() {
+  const externalUrl = 'https://goldmineai.digworldai.com/'
   const [showModal, setShowModal] = useState(false)
   const [selectedPlan, setSelectedPlan] = useState<string>('')
   const [loading, setLoading] = useState(false)
@@ -29,9 +30,7 @@ export default function GoldMineLanding() {
 
   const handlePlanClick = (plan: string, buttonId: string) => {
     console.log(`GTM Event: button_click, Button ID: ${buttonId}, Plan: ${plan}`)
-    setSelectedPlan(plan)
-    setShowModal(true)
-    setSuccess(false)
+    window.open(externalUrl, '_blank', 'noopener')
   }
 
   const handlePayment = async () => {
@@ -170,7 +169,7 @@ export default function GoldMineLanding() {
                 id="hero-cta-primary"
                 onClick={() => {
                   console.log('GTM Event: button_click, Button ID: hero-cta-primary')
-                  document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
+                  window.open(externalUrl, '_blank', 'noopener')
                 }}
                 className="group px-8 py-4 bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-950 font-bold rounded-xl hover:from-amber-400 hover:to-yellow-500 transition-all duration-300 shadow-lg shadow-amber-500/50 hover:shadow-amber-500/80 hover:scale-105"
               >

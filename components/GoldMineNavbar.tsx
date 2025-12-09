@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Pickaxe, Menu, X } from 'lucide-react'
 
 export default function GoldMineNavbar() {
+  const externalUrl = 'https://goldmineai.digworldai.com/'
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -87,7 +88,10 @@ export default function GoldMineNavbar() {
               {/* Login Button (Desktop) */}
               <button
                 id="nav-login"
-                onClick={() => trackNavClick('nav-login', 'login')}
+                onClick={() => {
+                  trackNavClick('nav-login', 'login')
+                  window.open(externalUrl, '_blank', 'noopener')
+                }}
                 className="hidden sm:block text-slate-300 hover:text-white transition-colors text-sm font-medium px-4 py-2"
               >
                 Login
@@ -97,8 +101,8 @@ export default function GoldMineNavbar() {
               <button
                 id="nav-cta-primary"
                 onClick={() => {
-                  scrollToSection('pricing')
-                  trackNavClick('nav-cta-primary', 'scroll-to-pricing')
+                  trackNavClick('nav-cta-primary', 'external')
+                  window.open(externalUrl, '_blank', 'noopener')
                 }}
                 className="bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-950 font-semibold px-4 py-2 rounded-lg hover:from-amber-400 hover:to-yellow-500 transition-all duration-300 text-sm shadow-lg shadow-amber-500/50 hover:shadow-amber-500/80"
               >
@@ -171,6 +175,7 @@ export default function GoldMineNavbar() {
                   onClick={() => {
                     setMobileMenuOpen(false)
                     trackNavClick('nav-mobile-login', 'login')
+                    window.open(externalUrl, '_blank', 'noopener')
                   }}
                   className="w-full py-3 text-slate-300 border border-slate-700 rounded-lg hover:bg-slate-800 transition-colors"
                 >
@@ -178,8 +183,8 @@ export default function GoldMineNavbar() {
                 </button>
                 <button
                   onClick={() => {
-                    scrollToSection('pricing')
-                    trackNavClick('nav-mobile-cta', 'scroll-to-pricing')
+                    trackNavClick('nav-mobile-cta', 'external')
+                    window.open(externalUrl, '_blank', 'noopener')
                   }}
                   className="w-full py-3 bg-gradient-to-r from-amber-500 to-yellow-600 text-slate-950 font-bold rounded-lg hover:from-amber-400 hover:to-yellow-500 transition-all shadow-lg shadow-amber-500/50"
                 >
