@@ -37,6 +37,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-P483DNW2');`,
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-N1MK19PS4R"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){window.dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-N1MK19PS4R');`,
+          }}
+        />
       </head>
       <body>
         <noscript>
